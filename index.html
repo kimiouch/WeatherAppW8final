@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <h1 class="title">
+            🌈know the <strong> WEATHER </strong>,wherever you are🗺
+        </h1>
+
+        <hr />
+        <form>
+            <img src="https://image.flaticon.com/icons/png/512/2076/2076808.png" width="80px" />
+            <input type="search" placeholder="search for city" class="type" value="" />
+            <button class="search">
+                🔍
+            </button>
+            <button class="current" id="current">
+                current
+
+            </button>
+
+        </form>
+
+        <hr />
+
+        <div class="container">
+            <div class="row">
+                <div class="col" id="em">
+                    <h3 class="teh">
+                        <span id="city">
+                            please search for a city first:]
+                        </span>
+                        <br />
+                        <em id="time"></em>
+                        <br />
+                        <span id="des"> ... </span>
+                    </h3>
+                    <em>
+                        <div class="temratures">
+                            <span id="temp">...</span>
+                            <a id="celsius" href="#">°C🌡</a>
+                            <!-- |
+                        <a id="fahrenheit" href="#">°F</a> -->
+                            <br />
+                        </div>
+
+                        <br />
+                        Humidity: <span id="humid">...</span> %💧
+                        <br />
+                        Wind: <span id="wind">...<span> km/h🌬
+                    </em>
+                </div>
+                <div class="col">
+                    <img src="./icons/rainbow.png" width="200px" class="bigjpg" id="icon" />
+
+                </div>
+            </div>
+        </div>
+
+        <hr />
+       <h1 class="nexts">
+        <img src="https://image.flaticon.com/icons/png/512/1610/1610215.png" width="60px" />
+        NEXT 5 DAYS
+    </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Sat
+                <br />
+                36°24°
+                <br />
+                <img src="https://image.flaticon.com/icons/png/512/869/869767.png" width="80px" />
+                <span>
+                    sunny
+                </span>
+            </div>
+            <!--
+            <div class="col">
+                Sun
+                <br />
+                37°26°
+                <img src="https://image.flaticon.com/icons/png/512/1163/1163763.png" width="80px" />
+                <span>
+                    Mostly sunny
+                </span>
+            </div>
+            <div class="col">
+                Mon
+                <br />
+                37°26°
+                <img src="https://image.flaticon.com/icons/png/512/1163/1163763.png" width="80px" />
+                <span>
+                    Mostly sunny
+                </span>
+            </div>
+            <div class="col">
+                Tue
+                <br />
+                37°24°
+                <img src="https://image.flaticon.com/icons/png/512/1163/1163763.png" width="80px" />
+                <span>
+                    Mostly sunny
+                </span>
+            </div>
+            <div class="col">
+                Wed
+                <br />
+                37°28°
+                <img src="https://image.flaticon.com/icons/png/512/1163/1163763.png" width="80px" />
+                <span>
+                    Mostly sunny
+                </span>
+            </div>
+        </div>
+    </div>
+    <hr />
+    -->
+        <h4 class="Github-link">
+            <a href="https://github.com/kimiouch/weatherAppW7">open source code</a> by kimia haghighi🦕
+        </h4>
+        <script src="./index.js"></script>
+    </div>
+</body>
+
+</html>
