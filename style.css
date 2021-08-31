@@ -12,7 +12,7 @@ background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .title {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px 10px 5px 10px;
   color: #333333;
 }
@@ -23,7 +23,7 @@ hr {
 }
 form {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 .type {
   padding: 5px 10px;
@@ -47,38 +47,37 @@ form {
 }
 
 #city {
-  font-size: 30px;
-}
-.teh {
-  color: #006ec5;
   font-size: 20px;
+}
+clo1 {
+  color: #006ec5;
+  font-size: 15px;
 }
 
 #temp {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #em {
   font-size: medium;
-  margin-left: 50px;
+  
   color: #ffa217;
-  text-align: left;
+
 }
 .bigjpg {
-  text-align: right;
-  padding-right: 30px;
+ 
+  
 }
-.container {
-  text-align: center;
-}
+
 .nexts {
   text-align: center;
   color: #596aca;
   text-decoration: underline;
+  font-size: 25px;
 }
 .col {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   color: #006ec5;
   padding-top: 15px;
 }
