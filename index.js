@@ -26,17 +26,6 @@ let icons = {
 
 }
 
-
-// function dayOrNight(time,sunrise,sunset){
-//     console.log(new Date(time), new Date(sunset), new Date(sunrise))
-// if (time >  sunrise && time < sunset){
-//     return "day";
-// } else{
-//     return "night";
-// }
-//}
-
-
 function today(timestamp) {
     let weekdays = [
         "Sunday",
@@ -77,6 +66,40 @@ function searchForCity(event) {
 
     searchbox.value = "";
 }
+
+function displayForecast() {
+    let forecastelement = document.querySelector("#forecast");
+
+    let days = ["Thu","Fri","Sat","Sun",];
+
+    let forecastHTML = `<div class="row">`;
+    days.forEach(function(day){
+        forecastHTML = forecastHTML +
+     `
+            <div class="col-1">
+                <div class="forecast-date">  ${day} </div>
+                <img src="https://image.flaticon.com/icons/png/512/869/869767.png" width="70px" />
+                
+               <div class="forecast-temp">
+
+               <span class ="forecast-temp-max"> 36° </span>
+               <span class ="forecast-temp-min"> 24° </span>
+                 
+            <div/>
+         <div/>  
+             `; 
+
+    });
+
+    
+    forecastHTML = forecastHTML + `</div>`;
+    forecastelement.innerHTML = forecastHTML ;
+    
+    console.log(forecastHTML);
+    
+   
+}
+
 function setCelsius(response) {
     let cityheader = document.querySelector("#city");
     cityheader.innerHTML = response.data.name;
@@ -95,7 +118,7 @@ function setCelsius(response) {
     Wind.innerHTML = Math.round(response.data.wind.speed);
 
     let iconelement = document.querySelector("#icon");
-    // let calldayandnight = dayOrNight(response.data.dt, response.data.sunrise, response.data.sunset);
+   
     iconelement.setAttribute("src", icons[response.data.weather[0].icon]);
 
 
@@ -125,6 +148,7 @@ function currentPositionError() {
     };
     currentPosition(position);
 }
+displayForecast();
 
 function currentPosition(position) {
     let lat = position.coords.latitude;

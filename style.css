@@ -49,10 +49,6 @@ form {
 #city {
   font-size: 20px;
 }
-clo1 {
-  color: #006ec5;
-  font-size: 15px;
-}
 
 #temp {
   font-size: 30px;
@@ -64,10 +60,7 @@ clo1 {
   color: #ffa217;
 
 }
-.bigjpg {
- 
-  
-}
+
 
 .nexts {
   text-align: center;
@@ -75,15 +68,9 @@ clo1 {
   text-decoration: underline;
   font-size: 25px;
 }
-.col {
-  font-weight: 700;
-  font-size: 15px;
-  color: #006ec5;
-  padding-top: 15px;
-}
-div img {
-  padding-top: 20px;
-}
+
+
+
 .Github-link {
   font-size: medium;
   padding: 10px 0px 20px 50px ;
