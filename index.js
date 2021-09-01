@@ -76,21 +76,18 @@ function displayForecast() {
     days.forEach(function(day){
         forecastHTML = forecastHTML +
      `
-            <div class="col-1">
-                <div class="forecast-date">  ${day} </div>
-                <img src="https://image.flaticon.com/icons/png/512/869/869767.png" width="70px" />
-                
-               <div class="forecast-temp">
+        <div class="col-1">
+            <div class="forecast-date">  ${day} </div>
+            <img src="https://image.flaticon.com/icons/png/512/869/869767.png" width="70px" />
 
-               <span class ="forecast-temp-max"> 36° </span>
-               <span class ="forecast-temp-min"> 24° </span>
-                 
-            <div/>
-         <div/>  
-             `; 
+            <div class="forecast-temp">
+                <span class ="forecast-temp-max"> 36° </span>
+                <span class ="forecast-temp-min"> 24° </span> 
+            </div>
+        </div>  
+    `; 
 
     });
-
     
     forecastHTML = forecastHTML + `</div>`;
     forecastelement.innerHTML = forecastHTML ;

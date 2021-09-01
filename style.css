@@ -56,11 +56,7 @@ form {
 
 #em {
   font-size: medium;
-  
-  color: #ffa217;
-
 }
-
 
 .nexts {
   text-align: center;
@@ -69,7 +65,9 @@ form {
   font-size: 25px;
 }
 
-
+.container {
+  display: inline;
+}
 
 .Github-link {
   font-size: medium;
