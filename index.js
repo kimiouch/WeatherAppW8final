@@ -70,7 +70,7 @@ function searchForCity(event) {
 function displayForecast() {
     let forecastelement = document.querySelector("#forecast");
 
-    let days = ["Thu","Fri","Sat","Sun",];
+    let days = ["Thu","Fri","Sat","Sun","Mon","Tue","Wed"];
 
     let forecastHTML = `<div class="row">`;
     days.forEach(function(day){
@@ -78,7 +78,7 @@ function displayForecast() {
      `
         <div class="col-1">
             <div class="forecast-date">  ${day} </div>
-            <img src="https://image.flaticon.com/icons/png/512/869/869767.png" width="70px" />
+            <img src="https://image.flaticon.com/icons/png/512/869/869767.png" width="50px" class="forecast-icon" />
 
             <div class="forecast-temp">
                 <span class ="forecast-temp-max"> 36° </span>

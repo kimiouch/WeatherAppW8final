@@ -6,7 +6,7 @@ body {
   margin: 50px auto;
   border: 2px solid black;
   border-radius: 10px;
-background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
   
 }
@@ -18,26 +18,32 @@ background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 hr {
-  margin: 15px 35px;
-  border: 2px solid #7e1f1f;
+  border: 1px solid #000000;
+  margin: 5px 30px ;margin: 5px 30px ;
 }
+
 form {
-  text-align: center;
   font-size: 20px;
 }
 .type {
-  padding: 5px 10px;
-  text-align: center;
-  background-color: #b3dbf2;
+  padding: 5px 20px;
+  background-color: #83dad8;
   border-radius: 15%;
+  margin-right: 20px;
 }
 .search {
   font-size: 25px;
+  margin: 0 20px 0 0;
   padding: 5px 7px;
   border-radius: 20%;
-  background-color: #ffedd4;
+  background-color: #F7C8A8;
   border-color: #ffa217;
 }
+
+.search-img {
+  margin: 0 20px 0 50px;
+}
+
 .current {
   font-size: 20px;
   padding: 9px 7px;
@@ -46,31 +52,94 @@ form {
   border-color: #78b75b;
 }
 
+.searched {
+ margin-top: 20px;
+}
+
+.column-1 {
+  margin-left: 40px;
+}
 #city {
-  font-size: 20px;
+  font-size: 15px;
 }
 
-#temp {
-  font-size: 30px;
+#time {
+  
+  font-size: 12px;
 }
 
-#em {
-  font-size: medium;
+#des {
+ 
+   font-size: 12px;
 }
+
+.temratures {
+  margin: 10px;
+}
+
+
+div.col {
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+.rainbow {
+  margin-right: 20px;
+}
+
+
 
 .nexts {
   text-align: center;
   color: #596aca;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.frame {
+  border: 2px solid #596ACA;
+  border-radius: 10px;
+  max-width: 650px;
+  margin: 5px auto;
+  background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 45.2%, rgb(21, 186, 196) 100.3%);
 }
 
 .container {
   display: inline;
 }
 
+.col-1 {
+  margin-left: 35px ;
+}
+
+.forecast-icon {
+  text-align: center;
+}
+
+.forecast-date{
+   text-align: center;
+   font-weight: bold;
+   padding-bottom: 10px;
+}
+
+.forecast-temp {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
 .Github-link {
   font-size: medium;
-  padding: 10px 0px 20px 50px ;
+  text-align: right;
+  padding: 20px 50px 10px 0 ;
+  color: #519632;
+}
+
+.theGitlink {
+  color: #596ACA;
+
+}
+
+.theGitlink:hover {
+  color: #54BEBD;
 }
 
