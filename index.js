@@ -14,7 +14,7 @@ let icons = {
     "50d": "./icons/day/mistday.png",
 
 
-    "01n": "./icons/clearnight.png",
+    "01n": "./icons/night/clearnight.png",
     "02n": "./icons/night/fewclouds.png",
     "03n": "./icons/cloud.png",
     "04n": "./icons/manyclouds.png",
@@ -67,7 +67,10 @@ function searchForCity(event) {
     searchbox.value = "";
 }
 
-function displayForecast() {
+function displayForecast(response) {
+
+    console.log(response.data.daily);
+
     let forecastelement = document.querySelector("#forecast");
 
     let days = ["Thu","Fri","Sat","Sun","Mon","Tue","Wed"];
@@ -91,10 +94,16 @@ function displayForecast() {
     
     forecastHTML = forecastHTML + `</div>`;
     forecastelement.innerHTML = forecastHTML ;
-    
-    console.log(forecastHTML);
-    
-   
+  
+}
+
+function getForecast(coordinates){
+  console.log(coordinates);
+
+  let apiKey = "c403a9e2a5c07086f36f15c109e2369a";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`; 
+  
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function setCelsius(response) {
@@ -121,6 +130,8 @@ function setCelsius(response) {
 
     let currrentTime = document.querySelector("#time");
     currrentTime.innerHTML = today((response.data.dt + response.data.timezone) * 1000);
+
+    getForecast(response.data.coord);
 
 }
 
