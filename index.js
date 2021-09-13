@@ -156,7 +156,7 @@ function currentPositionError() {
     };
     currentPosition(position);
 }
-displayForecast();
+//displayForecast(response);
 
 function currentPosition(position) {
     let lat = position.coords.latitude;

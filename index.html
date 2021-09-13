@@ -2,98 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link href="./style.css" rel="stylesheet" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link href="./style.css" rel="stylesheet" />
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-    <div class="body">
-        <h1 class="title">
-            🌈know the <strong> WEATHER </strong> with kim🗺
-        </h1>
-          
-        <hr />
+	<div class="body">
+		<h1 class="title">
+			🌈know the <strong> WEATHER </strong> with kim🗺
+		</h1>
 
-    
-        <form>
-            <img src="https://image.flaticon.com/icons/png/512/1610/1610215.png" width="80px" class="search-img" />
-            <input type="search" placeholder="search for city or country" class="type" value="" />
-            <button class="search">
-                🔍
-            </button>
-            <button class="current" id="current">
-                current
-
-            </button>
-       </form>
-
-      
-
-        <div class="container searched" >
-            <div class="row">
-                <div class="col" id="em">
-                    <h3 class="column-1">
-                        <span id="city">
-                        please search first:]
-                        </span>
-
-                        <br />
-
-                        <em id="time"> .. : .. </em>
-
-                        <br />
-
-                        <span id="des"> ... </span>
-                    </h3>
-                </div>
-                 
-                <div class="col">
-                    <div class="temratures">
-                        <em>
-                            <span id="temp">...</span>
-                            <a id="celsius" href="#">°C🌡</a>
-
-                            <!-- TODO support farenheit -->
-                            <!-- | <a id="fahrenheit" href="#">°F</a> -->
-
-                            <br />
-
-                            Humidity: <span id="humid">...</span> %💧
-
-                            <br />
-
-                            Wind: <span id="wind">...<span> km/h🌬
-                        </em>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="./icons/rainbow.png" width="100px" class="rainbow" id="icon" />
-
-                </div>
-            </div>
-        </div>
+		<hr />
 
 
-       <h1 class="nexts">
-          <img src="" width="60px" />
-           NEXT 5 DAYS
-      </h1>
-      
-      <div class="frame">
-          <div class="container" id="forecast">   </div>
-      </div>
+		<form>
+			<img src="https://image.flaticon.com/icons/png/512/1610/1610215.png" width="80px" class="search-img" />
+			<input type="search" placeholder="search for city or country" class="type" value="" />
+			<button class="search">
+				🔍
+			</button>
 
-        <h4 class="Github-link">
-            <a href="https://github.com/kimiouch/weatherAppW7" class="theGitlink" >open source code</a> by kimia haghighi🦕
-        </h4>
-        <script src="./index.js"></script>
-    </div>
+			<button class="current" id="current">
+				current
+			</button>
+		</form>
+
+
+
+		<div class="container searched">
+			<div class="row">
+				<div class="col" id="em">
+					<h3 class="column-1">
+						<span id="city">
+							please search first:]
+						</span>
+
+						<br />
+
+						<em id="time"> .. : .. </em>
+
+						<br />
+
+						<span id="des"> ... </span>
+					</h3>
+				</div>
+
+				<div class="col">
+					<div class="temratures">
+						<em>
+							<span id="temp">...</span>
+							<a id="celsius" href="#">°C🌡</a>
+
+							<!-- TODO support farenheit -->
+							<!-- | <a id="fahrenheit" href="#">°F</a> -->
+
+							<br />
+
+							Humidity: <span id="humid">...</span> %💧
+
+							<br />
+
+							Wind: <span id="wind">...<span> km/h🌬
+						</em>
+					</div>
+				</div>
+				<div class="col">
+					<img src="./icons/rainbow.png" width="100px" class="rainbow" id="icon" />
+
+				</div>
+			</div>
+		</div>
+
+
+		<h1 class="nexts">
+			<img src="" width="60px" />
+			NEXT 5 DAYS
+		</h1>
+
+		<div class="frame">
+			<div class="container" id="forecast">
+				<div class="row">
+					<div class="col">
+						<div class="forecast-date"> Thu </div>
+						<img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+
+						<div class="forecast-temp">
+							<span class="forecast-temp-max"> 36° </span>
+							<span class="forecast-temp-min"> 24° </span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="forecast-date"> Fri </div>
+						<img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+
+						<div class="forecast-temp">
+							<span class="forecast-temp-max"> 36° </span>
+							<span class="forecast-temp-min"> 24° </span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="forecast-date"> Sat </div>
+						<img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+
+						<div class="forecast-temp">
+							<span class="forecast-temp-max"> 36° </span>
+							<span class="forecast-temp-min"> 24° </span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="forecast-date"> Sun </div>
+						<img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+
+						<div class="forecast-temp">
+							<span class="forecast-temp-max"> 36° </span>
+							<span class="forecast-temp-min"> 24° </span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="forecast-date"> Mon </div>
+						<img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+
+						<div class="forecast-temp">
+							<span class="forecast-temp-max"> 36° </span>
+							<span class="forecast-temp-min"> 24° </span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="forecast-date"> Tue </div>
+						<img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+
+						<div class="forecast-temp">
+							<span class="forecast-temp-max"> 36° </span>
+							<span class="forecast-temp-min"> 24° </span>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="forecast-date"> Wed </div>
+						<img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+
+						<div class="forecast-temp">
+							<span class="forecast-temp-max"> 36° </span>
+							<span class="forecast-temp-min"> 24° </span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<hr / class="buttom">
+
+		<h4 class="Github-link">
+			<a href="https://github.com/kimiouch/weatherAppW7" class="theGitlink">open source code</a> by kimia haghighi🦕
+		</h4>
+		<script src="./index.js"></script>
+	</div>
+
 </body>
 
 </html>
