@@ -1,8 +1,6 @@
 body {
   background-image: url("./icons/background/weatherback.svg");
   background-size: cover;
-  /* background: radial-gradient(circle at 50%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 45%, rgb(21, 186, 196) 100%); */
-  /* background: radial-gradient(at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 45.2%, rgb(21, 186, 196) 100.3%); */
 }
 .body {
   max-width: 700px;
@@ -14,9 +12,14 @@ body {
 }
 .title {
   text-align: center;
-  font-size: 15px;
-  padding: 20px 10px 5px 10px;
+  font-size: 17px;
+  padding: 20px 0 5px 0;
   color: #333333;
+}
+
+strong {
+  text-decoration: underline;
+  color: #596aca;
 }
 
 hr {
@@ -26,24 +29,22 @@ hr {
 
 form {
   font-size: 20px;
+  margin: auto 30px;
 }
 .type {
   padding: 7px 25px;
-  background-color: #83dad8;
+  background-color: #ECF4F6;
+  border-color: #596aca;
   border-radius: 5px;
-  margin-right: 20px;
+ 
 }
 .search {
+  margin: auto 5px;
   font-size: 25px;
-  margin: 0 20px 0 0;
   padding: 5px 7px;
   border-radius: 20%;
   background-color: #F7C8A8;
   border-color: #ffa217;
-}
-
-.search-img {
-  margin: 0 20px 0 50px;
 }
 
 .current {
@@ -62,23 +63,25 @@ form {
   margin-left: 40px;
 }
 #city {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #time {
-  
-  font-size: 12px;
+   font-size: 15px;
 }
 
 #des {
  
-   font-size: 12px;
+   font-size: 15px;
+}
+
+#temp {
+  text-decoration: underline;
 }
 
 .temratures {
   margin: 10px;
 }
-
 
 div.col {
   margin-top: -10px;
@@ -87,7 +90,6 @@ div.col {
 .rainbow {
   margin-right: 20px;
 }
-
 
 .nexts {
   text-align: center;
@@ -136,19 +138,18 @@ div.col {
 
 }
 
-.Github-link {
+.sorce-link {
   font-size: medium;
-  text-align: right;
-  padding: 5px 50px 10px 0 ;
-  color: #519632;
+  text-align: center;
+  padding: 10px 5px;
 }
 
-.theGitlink {
-  color: #596ACA;
+.thesrcLinks {
+  color: #54b35e;
 
 }
 
-.theGitlink:hover {
+.thesrcLinks:hover {
   color: #54BEBD;
 }
 
