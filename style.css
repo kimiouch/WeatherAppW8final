@@ -28,7 +28,7 @@ form {
   font-size: 20px;
 }
 .type {
-  padding: 5px 20px;
+  padding: 7px 25px;
   background-color: #83dad8;
   border-radius: 5px;
   margin-right: 20px;
@@ -89,7 +89,6 @@ div.col {
 }
 
 
-
 .nexts {
   text-align: center;
   color: #596aca;
@@ -105,6 +104,11 @@ div.col {
   background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 45.2%, rgb(21, 186, 196) 100.3%);
 }
 
+
+#forecast .row {
+  padding: 5px 10px;
+}
+
 .container {
   display: inline;
 }
@@ -112,6 +116,7 @@ div.col {
 .forecast-icon {
   text-align: center;
   max-width: 100%;
+
 }
 
 .forecast-date{

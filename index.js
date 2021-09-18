@@ -67,29 +67,37 @@ function searchForCity(event) {
     searchbox.value = "";
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
 
-    console.log(response.data.daily);
+    let forecast = response.data.daily;
 
     let forecastelement = document.querySelector("#forecast");
 
-    let days = ["Thu","Fri","Sat","Sun","Mon","Tue","Wed"];
-
     let forecastHTML = `<div class="row">`;
-    days.forEach(function(day){
+    forecast.forEach(function(forecastday, index){
+
+        if (index < 6){
         forecastHTML = forecastHTML +
-     `
-        <div class="col-1">
-            <div class="forecast-date">  ${day} </div>
-            <img src="https://image.flaticon.com/icons/png/512/869/869767.png" width="50px" class="forecast-icon" />
+        ` 
+           <div class="col">
+			    <div class="forecast-date"> ${formatDay(forecastday.dt)} </div>
+			    <img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
 
-            <div class="forecast-temp">
-                <span class ="forecast-temp-max"> 36° </span>
-                <span class ="forecast-temp-min"> 24° </span> 
-            </div>
-        </div>  
-    `; 
-
+			    <div class="forecast-temp">
+				    <span class="forecast-temp-max"> ${Math.round(forecastday.temp.max)}° </span>
+				    <span class="forecast-temp-min"> ${Math.round(forecastday.temp.min)}° </span>
+			    </div>
+		    </div>
+        `; 
+        }
     });
     
     forecastHTML = forecastHTML + `</div>`;
