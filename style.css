@@ -29,9 +29,10 @@ hr {
 
 form {
   font-size: 20px;
-  margin: auto 30px;
+  margin: auto 50px;
 }
 .type {
+  margin-left: 15px;
   padding: 7px 25px;
   background-color: #ECF4F6;
   border-color: #596aca;
@@ -39,7 +40,7 @@ form {
  
 }
 .search {
-  margin: auto 5px;
+  margin: auto 15px;
   font-size: 25px;
   padding: 5px 7px;
   border-radius: 20%;
