@@ -89,7 +89,7 @@ function displayForecast(response) {
         ` 
            <div class="col">
 			    <div class="forecast-date"> ${formatDay(forecastday.dt)} </div>
-			    <img src="https://image.flaticon.com/icons/png/512/869/869767.png" class="forecast-icon">
+			    <img src=" ${icons[forecastday.weather[0].icon]}" class="forecast-icon">
 
 			    <div class="forecast-temp">
 				    <span class="forecast-temp-max"> ${Math.round(forecastday.temp.max)}° </span>
@@ -132,9 +132,7 @@ function setCelsius(response) {
     Wind.innerHTML = Math.round(response.data.wind.speed);
 
     let iconelement = document.querySelector("#icon");
-   
     iconelement.setAttribute("src", icons[response.data.weather[0].icon]);
-
 
     let currrentTime = document.querySelector("#time");
     currrentTime.innerHTML = today((response.data.dt + response.data.timezone) * 1000);
@@ -164,7 +162,7 @@ function currentPositionError() {
     };
     currentPosition(position);
 }
-//displayForecast(response);
+
 
 function currentPosition(position) {
     let lat = position.coords.latitude;
